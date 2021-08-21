@@ -1,4 +1,4 @@
-title:              KigKicKanKabAkagera
+title:              Akagera ka Kabeza ya Kanombe
 email:              muyobozinet@gmail.com
 description:        Uru Rubugankoranyambaga Rugizwe n'Inyandiko z'Ifashishwa mu Muganda wa Buri Kwezi
 author:             Ijambo Sema Andrew
@@ -17,7 +17,7 @@ google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
-paginate:           5
+paginate:           4
 paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed

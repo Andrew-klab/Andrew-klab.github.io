@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: Posts
-background: '/img/bg-post.jpg'
+background: '/image/bg-index.jpg'
 ---
 
 {% for post in paginator.posts %}
@@ -15,13 +15,13 @@ background: '/img/bg-post.jpg'
     <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
     {% endif %}
   </a>
-  <p class="post-meta">Posted by
+  <p class="post-meta">Byandikishijwe na
     {% if post.author %}
     {{ post.author }}
     {% else %}
     {{ site.author }}
     {% endif %}
-    on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
+    on {{ post.date | date: '%B %d, %Y' }}
   </p>
 </article>
 
@@ -36,11 +36,11 @@ background: '/img/bg-post.jpg'
 
   {% if paginator.previous_page %}
   <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
-    Imiganda<span class="d-none d-md-inline"> itegurwa</span></a>
+    Imiganda<span class="d-none d-md-inline"> yakozwe</span></a>
   {% endif %}
 
   {% if paginator.next_page %}
-  <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Imiganda<span class="d-none d-md-inline"> yakozwe</span> &rarr;</a>
+  <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Abiyandikisha<span class="d-none d-md-inline"> uku Kwezi</span> &rarr;</a>
   {% endif %}
 
 </div>
